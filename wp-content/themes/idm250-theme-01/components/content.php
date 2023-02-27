@@ -1,12 +1,13 @@
-<div class="content-blocks"> 
-<?php 
-
+<div>
+  <?php
 if (have_posts()) {
+    // Load posts loop.
     while (have_posts()) {
-        the_post(); 
+        the_post();
         the_content();
     }
 } else {
-    echo 'no posts found'; 
-} ?> 
-</div> 
+    echo 'no posts found';
+}
+  ?>
+</div>

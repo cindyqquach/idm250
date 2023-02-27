@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="">  
-  <title>IDM250</title>
+  <title>PAWS</title>
   <?php // https://developer.wordpress.org/reference/functions/wp_head/;?>
   <?php wp_head(); ?>
 </head>
@@ -15,14 +14,11 @@
   <?php 
   wp_body_open();
   get_template_part('components/header')?> 
-  <!-- <header>
-    <img src="#" alt="logo"> 
-    <nav>
-      <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Clinical Services</a></li>
-        <li><a href="#">Locations</a></li>
-        <li><a href="#">Get Involved</a></li>
-      </ul>
+  <header> 
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pawslogo.png" class="logo" alt="Logo">
+    <nav class="main-menu"> 
+      <?php 
+      wp_nav_menu(['theme_location' => 'primary-menu']); 
+      ?> 
     </nav>
-  </header> -->
+  </header> 

@@ -22,7 +22,7 @@ function theme_scripts_and_styles()
     // Load in Google Fonts
     wp_enqueue_style(
         'google-fonts',
-        'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap',
         [],
         null
     );
@@ -36,21 +36,7 @@ function theme_scripts_and_styles()
         'all' // media
     );
 
-    wp_enqueue_script(
-        'tailwind', // name of the script
-        'https://cdn.tailwindcss.com',
-        [], // dependencies
-        null, // version number
-        false // load in footer
-    );
-    // Enable first-party plugins, like forms and typography, using the plugins query parameter.
-    wp_enqueue_script(
-        'tailwind-plugins', // name of the script
-        'https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"',
-        [], // dependencies
-        null, // version number
-        false // load in footer
-    );
+    
     wp_enqueue_script(
         'idm250-scripts', // name of the script
         get_template_directory_uri() . '/dist/scripts/main.js', // http://localhost:250/wp-content/themes/idm250-theme-02/dist/scripts/main.js

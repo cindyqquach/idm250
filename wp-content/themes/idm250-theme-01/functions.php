@@ -22,10 +22,17 @@ function theme_scripts_and_styles()
     // Load in Google Fonts
     wp_enqueue_style(
         'google-fonts',
-        'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap',
+        'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap', 
         [],
         null
     );
+    wp_enqueue_style(
+        'google-fonts',
+        'https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap', 
+        [],
+        null
+    );
+
 
     // Load in local CSS {@link https://developer.wordpress.org/reference/functions/wp_enqueue_style/}
     wp_enqueue_style(

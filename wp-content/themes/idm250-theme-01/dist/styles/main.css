@@ -3,6 +3,7 @@
     --text-color: #08311B; 
     --heading-color: #D94D41;
     --accent-color: #008B68; 
+    --accent-color-light: #BF91C4;
     --regular-text: normal 17px/30px 'Poppins', sans-serif;
     --heading-text: normal 40px/50px 'Alfa Slab One'; 
 }
@@ -20,7 +21,7 @@
 @media screen and (min-width:0px) {
 .logo {
     padding: 10px; 
-    width: 25%; 
+    width: 20%; 
     height: auto; 
 }
 img {
@@ -118,13 +119,60 @@ footer, footer p, .footer-menu, .footer-menu a {
 }
 .copyright {
     text-align: center;
-    font: normal 12px/30px 'Poppins', sans-serif;
+    font: normal 14px/30px 'Poppins', sans-serif;
     color: var(--background-color); 
+}
+/* 404 Page  */
+.error {
+    text-align: center;
+    color: var(--accent-color-light);
+    font: bold 70px/30px 'Poppins', sans-serif;
+    margin: 40px 0 30px; 
+}
+.error-heading, .error-para {
+    text-align: center;
+    font: normal 14px/25px 'Poppins', sans-serif;
+    color: var(--text-color);
+    margin: 0 20px; 
+}
+.error-heading {
+    font-weight: bold;
+}
+.click-button {
+    text-decoration: none;
+    font: normal 14px/25px 'Poppins', sans-serif;
+    color: var(--background-color); 
+    background-color: var(--heading-color);
+    border: none;
+    display: inline-block;
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 50px;
+}
+.button {
+    display: block;
+    margin: 20px 100px 0; 
+}
+.click-button a {
+    text-decoration: none;
+    font: normal 14px/25px 'Poppins', sans-serif;
+    color: var(--background-color); 
+    background-color: var(--heading-color);
+}
+.footer-simple {
+    position: fixed; 
+    left: 0; 
+    bottom: 0; 
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--accent-color); 
+
 }
 }
 @media screen and (min-width:768px) {
 .logo {
-    width: 15%; 
+    width: 10%; 
 }
 header {
     display: flex;
@@ -137,6 +185,18 @@ header {
 .footer-menu ul{
     display: flex; 
     flex-flow: column wrap; 
+}
+.error {
+    font: bold 170px/180px 'Poppins', sans-serif;
+}
+.error-heading, .error-para {
+    font: normal 20px/30px 'Poppins', sans-serif;
+}
+.error-heading {
+    font-weight: bold;
+}
+.button {
+    margin: 40px 320px 0; 
 }
 }
 @media screen and (min-width:1440px) { 
@@ -182,7 +242,9 @@ video {
     width: 100%; 
     height: auto; 
     padding: 50px 150px; 
-
+}
+.button {
+    margin: 40px 630px 0; 
 }
 
 } 

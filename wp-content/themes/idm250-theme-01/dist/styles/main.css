@@ -80,7 +80,7 @@ h1 {
     left: 30px; 
 }
 a {
-    font: var(--para-mobile); 
+    font: normal 25px/35px 'Poppins', sans-serif;
     text-decoration: none;
     color: var(--text-color); 
 }
@@ -279,7 +279,7 @@ h3 {
 .wp-block-gallery {
     padding: 10px 60px; 
 }
-.wp-image-63, .wp-image-64 {
+.wp-image-63, .wp-image-64, .wp-image-42 {
     padding: 10px 60px; 
 }
 p {
@@ -298,47 +298,6 @@ p {
 header {
     gap: 650px;
 }
-/* .pet-info {
-    display: grid; 
-    grid-template-columns: 45% auto;
-    margin: 20px 105px; 
-}
-.pet-name {
-    text-align: left;
-    padding: 30px 0 0 30px; 
-}
-.intro-text {
-    font: normal 20px/35px 'Poppins', sans-serif;
-    margin-bottom: 10px; 
-}
-.paragraph {
-    padding: 10px 150px 50px; 
-}
-.para-subheading, video {
-    padding: 0 150px; 
-}
-video {
-    margin-bottom: 50px; 
-}
-.gallery {
-    display: grid; 
-    grid-template-columns: 50% auto;
-    padding: 0 100px; 
-}
-.pet-photo {
-    width: 100%; 
-    display: block; 
-    padding: 0 50px; 
-}
-.pet-photo-full {
-    width: 100%; 
-    height: auto; 
-    padding: 50px 150px; 
-}
-.button {
-    margin: 40px 630px 0; 
-} */
-/* Front-page */
 h1 {
     font: var(--heading-1-desktop); 
     left: 120px; 
@@ -360,7 +319,7 @@ h3 {
     font: var(--heading-3-tablet); 
     padding: 10px 200px; 
 }
-.wp-image-38 {
+.wp-image-37 {
     width: 100%; 
     max-height: 568px;
     object-fit: cover; 
@@ -368,7 +327,7 @@ h3 {
 .wp-block-gallery {
     padding: 30px 200px; 
 }
-.wp-image-64 {
+.wp-image-42 {
     padding: 30px 100px; 
     text-align: center;
     margin: 0 auto; 

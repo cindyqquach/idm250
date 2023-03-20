@@ -6,5 +6,7 @@ if (has_post_thumbnail()) {
     the_post_thumbnail(); 
 }
 ?> 
+<?php get_template_part('components/heros/hero-home'); ?> 
 <?php get_template_part('components/content'); ?>
 <?php get_footer(); ?>
+

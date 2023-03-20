@@ -4,8 +4,17 @@
     --heading-color: #D94D41;
     --accent-color: #008B68; 
     --accent-color-light: #BF91C4;
-    --regular-text: normal 17px/30px 'Poppins', sans-serif;
-    --heading-text: normal 40px/50px 'Alfa Slab One'; 
+    --para-mobile: normal 15px/30px 'Poppins', sans-serif;
+    --heading-1-mobile: bold 40px/50px 'Poppins', sans-serif;
+    --heading-2-mobile: bold 30px/30px 'Poppins', sans-serif;
+    --heading-3-mobile: bold 20px/30px 'Poppins', sans-serif;
+    --para-tablet: normal 18px/30px 'Poppins', sans-serif;
+    --heading-1-tablet: bold 70px/50px 'Poppins', sans-serif;
+    --heading-2-tablet: bold 64px/70px 'Poppins', sans-serif;
+    --heading-3-tablet: bold 24px/30px 'Poppins', sans-serif;
+    --heading-1-desktop: bold 130px/50px 'Poppins', sans-serif;
+    --heading-2-desktop: bold 64px/70px 'Poppins', sans-serif;
+    --heading-3-desktop: bold 24px/30px 'Poppins', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -44,7 +53,7 @@ img {
 }
 .main-menu li a {
     color: var(--text-color); 
-    padding: 5px 5px 50px; 
+    padding: 5px 5px 30px; 
 }
 .main-menu {
     display: flex; 
@@ -54,6 +63,56 @@ img {
 }
 li {
     display: block; 
+}
+/* Front-page */
+h1 {
+    font: var(--heading-1-mobile); 
+    color: var(--heading-color); 
+    position: absolute; 
+    top: 250px; 
+    left: 30px; 
+    background-color: transparent;
+}
+.wp-element-button {
+    background-color: var(--heading-color); 
+    position: absolute; 
+    top: 350px; 
+    left: 30px; 
+}
+a {
+    font: var(--para-mobile); 
+    text-decoration: none;
+    color: var(--text-color); 
+}
+a:hover {
+    color: var(--heading-color); 
+    text-decoration: underline;
+    cursor: pointer;
+}
+h2 {
+    font: var(--heading-2-mobile); 
+    color: var(--heading-color);
+    padding: 30px 30px 0; 
+}
+h3 {
+    font: var(--heading-3-mobile); 
+    color: var(--text-color);
+    padding: 10px 30px; 
+}
+.wp-block-gallery {
+    display: flex; 
+    flex-flow: row wrap; 
+    padding: 10px 30px; 
+}
+.wp-image-63, .wp-image-64 {
+    padding: 10px 30px; 
+}
+p {
+    font: var(--para-mobile); 
+    padding: 10px 30px; 
+}
+figcaption {
+    font: var(--para-mobile); 
 }
 /* Pet detail page */
 .pet-name {
@@ -93,9 +152,10 @@ video {
     padding: 10px 0; 
 }
 /* FOOTER */
-footer, footer p, .footer-menu, .footer-menu a {
-    background-color: transparent; 
-    font: var(--regular-text); 
+footer, footer p{
+    background-color: var(--accent-color); 
+    font: var(--para-mobile); 
+    color: var(--background-color); 
 }
 .footer {
     background-color: var(--accent-color); 
@@ -103,26 +163,23 @@ footer, footer p, .footer-menu, .footer-menu a {
     flex-flow: column wrap; 
     padding: 10px;  
 }
-.footer-menu li{
-    background-color:var(--accent-color);
-} 
-.footer-menu .menu {
-    font: bold 17px/30px 'Poppins', sans-serif;
+.pb-6 a, .pb-6, footer nav {
+    background-color: var(--accent-color);
 }
-.footer-menu li a {
-    display: block;
+.pb-6 {
+    padding: 5px 0 0; 
+}
+.pb-6 a {
+    font: var(--para-mobile); 
     color: var(--background-color); 
-}
-.menu-item-26 a, .menu-item-27 a, .menu-item-28 a {
-    font: normal 14px/30px 'Poppins', sans-serif;
-    padding-left: 5px; 
+    padding: 0 30px; 
 }
 .copyright {
     text-align: center;
     font: normal 14px/30px 'Poppins', sans-serif;
     color: var(--background-color); 
 }
-/* 404 Page  */
+/* 404 Page*/
 .error {
     text-align: center;
     color: var(--accent-color-light);
@@ -167,17 +224,18 @@ footer, footer p, .footer-menu, .footer-menu a {
     width: 100%;
     padding: 20px;
     background-color: var(--accent-color); 
+}
+}
 
-}
-}
 @media screen and (min-width:768px) {
 .logo {
     width: 10%; 
+    padding: 0 20px; 
 }
 header {
     display: flex;
     align-items: center;
-    gap: 250px;
+    gap: 230px;
 }
 .main-menu li a {
     padding: 5px 15px 50px; 
@@ -186,6 +244,7 @@ header {
     display: flex; 
     flex-flow: column wrap; 
 }
+/* 404 Page */
 .error {
     font: bold 170px/180px 'Poppins', sans-serif;
 }
@@ -198,15 +257,48 @@ header {
 .button {
     margin: 40px 320px 0; 
 }
+/* Front-page */
+h1 {
+    font: var(--heading-1-tablet); 
+    padding: 0 30px; 
+}
+.wp-element-button {
+    left: 60px; 
+}
+a {
+    font: var(--para-tablet); 
+}
+h2 {
+    font: var(--heading-2-tablet); 
+    padding: 60px 60px 0; 
+}
+h3 {
+    font: var(--heading-3-tablet); 
+    padding: 10px 60px; 
+}
+.wp-block-gallery {
+    padding: 10px 60px; 
+}
+.wp-image-63, .wp-image-64 {
+    padding: 10px 60px; 
+}
+p {
+    font: var(--para-tablet); 
+    padding: 30px 60px; 
+}
 }
 @media screen and (min-width:1440px) { 
 .logo {
-    width: 5%; 
+    width: 8%; 
+    padding: 25px; 
+}
+.main-menu li a {
+    padding: 5px 25px 50px; 
 }
 header {
-    gap: 850px;
+    gap: 650px;
 }
-.pet-info {
+/* .pet-info {
     display: grid; 
     grid-template-columns: 45% auto;
     margin: 20px 105px; 
@@ -245,6 +337,55 @@ video {
 }
 .button {
     margin: 40px 630px 0; 
+} */
+/* Front-page */
+h1 {
+    font: var(--heading-1-desktop); 
+    left: 120px; 
+    top: 400px; 
+    padding: 0 0 40px; 
 }
-
-} 
+.wp-element-button {
+    left: 120px; 
+    top: 530px; 
+}
+a {
+    font: var(--para-tablet); 
+}
+h2 {
+    font: var(--heading-2-tablet); 
+    padding: 60px 200px 0; 
+}
+h3 {
+    font: var(--heading-3-tablet); 
+    padding: 10px 200px; 
+}
+.wp-image-38 {
+    width: 100%; 
+    max-height: 568px;
+    object-fit: cover; 
+}
+.wp-block-gallery {
+    padding: 30px 200px; 
+}
+.wp-image-64 {
+    padding: 30px 100px; 
+    text-align: center;
+    margin: 0 auto; 
+}
+p {
+    font: var(--para-tablet); 
+    padding: 10px 200px 40px; 
+}
+a {
+    text-transform: uppercase;
+    text-align: center; 
+}
+/* FOOTER */
+.pb-6 {
+    padding: 10px 0 0; 
+}
+.pb-6 a {
+    padding: 0 200px; 
+}
+ }

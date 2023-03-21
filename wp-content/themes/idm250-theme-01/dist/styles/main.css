@@ -171,6 +171,7 @@ figcaption {
 .wp-image-81 {
     width: 100%; 
     height: auto; 
+    padding: 0; 
 }
 h6 {
     font: var(--heading-5-mobile); 

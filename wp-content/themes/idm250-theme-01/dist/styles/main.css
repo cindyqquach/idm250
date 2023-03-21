@@ -383,7 +383,7 @@ h4 {
     padding: 60px 200px; 
 }
 .wp-block-pullquote p {
-    font: var(--heading-3-desktop); 
+    font: var(--heading-5-desktop); 
     padding: 100px 200px ; 
 }
 cite {
@@ -442,7 +442,7 @@ h3 {
     margin: 0 auto; 
 }
 .wp-image-63 {
-    padding: 30px 200px; 
+    padding: 30px 200px;
 }
 p {
     font: var(--para-tablet); 

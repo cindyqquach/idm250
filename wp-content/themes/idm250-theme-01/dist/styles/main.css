@@ -14,7 +14,7 @@
     --heading-1-tablet: bold 70px/80px 'Poppins', sans-serif;
     --heading-2-tablet: bold 60px/70px 'Poppins', sans-serif;
     --heading-3-tablet: bold 30px/45px 'Poppins', sans-serif;
-    --heading-4-tablet: bold 25px/35px 'Poppins', sans-serif;
+    --heading-4-tablet: bold 25px/30px 'Poppins', sans-serif;
     --heading-5-tablet: bold 18px/28px 'Poppins', sans-serif;
     --para-desktop: normal 20px/30px 'Poppins', sans-serif;
     --heading-1-desktop: bold 130px/140px 'Poppins', sans-serif;
@@ -171,7 +171,6 @@ figcaption {
 .wp-image-81 {
     width: 100%; 
     height: auto; 
-    padding: 0; 
 }
 h6 {
     font: var(--heading-5-mobile); 

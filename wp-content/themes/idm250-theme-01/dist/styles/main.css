@@ -436,10 +436,13 @@ h3 {
 .wp-block-gallery {
     padding: 30px 200px; 
 }
-.wp-image-42, .wp-image-81, .wp-image-65, .wp-image-63 {
+.wp-image-42, .wp-image-81, .wp-image-65 {
     padding: 30px 100px; 
     text-align: center;
     margin: 0 auto; 
+}
+.wp-image-63 {
+    padding: 30px 200px; 
 }
 p {
     font: var(--para-tablet); 

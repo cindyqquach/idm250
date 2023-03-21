@@ -6,22 +6,23 @@
     --accent-color-light: #BF91C4;
     --para-mobile: normal 15px/30px 'Poppins', sans-serif;
     --heading-1-mobile: bold 40px/50px 'Poppins', sans-serif;
-    --heading-2-mobile: bold 30px/30px 'Poppins', sans-serif;
-    --heading-3-mobile: bold 26px/30px 'Poppins', sans-serif;
+    --heading-2-mobile: bold 30px/40px 'Poppins', sans-serif;
+    --heading-3-mobile: bold 26px/36px 'Poppins', sans-serif;
     --heading-4-mobile: bold 20px/30px 'Poppins', sans-serif;
     --heading-5-mobile: bold 14px/24px 'Poppins', sans-serif;
     --para-tablet: normal 18px/30px 'Poppins', sans-serif;
-    --heading-1-tablet: bold 70px/50px 'Poppins', sans-serif;
+    --heading-1-tablet: bold 70px/80px 'Poppins', sans-serif;
     --heading-2-tablet: bold 64px/70px 'Poppins', sans-serif;
-    --heading-3-tablet: bold 24px/30px 'Poppins', sans-serif;
+    --heading-3-tablet: bold 24px/35px 'Poppins', sans-serif;
     --heading-4-tablet: bold 22px/30px 'Poppins', sans-serif;
-    --heading-5-tablet: bold 18px/24px 'Poppins', sans-serif;
+    --heading-5-tablet: bold 18px/28px 'Poppins', sans-serif;
     --para-desktop: normal 20px/30px 'Poppins', sans-serif;
-    --heading-1-desktop: bold 130px/50px 'Poppins', sans-serif;
-    --heading-2-desktop: bold 80px/70px 'Poppins', sans-serif;
-    --heading-3-desktop: bold 64px/30px 'Poppins', sans-serif;
-    --heading-4-desktop: bold 40px/30px 'Poppins', sans-serif;
-    --heading-5-desktop: bold 20px/30px 'Poppins', sans-serif;
+    --heading-1-desktop: bold 130px/140px 'Poppins', sans-serif;
+    --heading-2-desktop: bold 80px/90px 'Poppins', sans-serif;
+    --heading-3-desktop: bold 64px/70px 'Poppins', sans-serif;
+    --heading-4-desktop: bold 40px/50px 'Poppins', sans-serif;
+    --heading-5-desktop: bold 30px/40px 'Poppins', sans-serif;
+    --heading-5-desktop: bold 15px/30px 'Poppins', sans-serif;
 }
 * {
     box-sizing: border-box;
@@ -156,7 +157,7 @@ h3 {
     flex-flow: row wrap; 
     padding: 10px 30px; 
 }
-.wp-image-63, .wp-image-64, .wp-image-42, .wp-image-81, .wp-image-82, .wp-image-65 {
+.wp-image-63, .wp-image-64, .wp-image-42, .wp-image-82, .wp-image-65 {
     padding: 10px 30px; 
 }
 p {
@@ -166,44 +167,16 @@ p {
 figcaption {
     font: var(--para-mobile); 
 }
-/* Pet detail page */
-/* .pet-name {
-    text-align: center;
-    font: var(--heading-text);
-    color: var(--heading-color); 
-} 
-.pet-photo {
-    display: block; 
-    margin: 0 auto; 
-    width: 80%; 
-    height: auto; 
-    padding: 10px 0; 
-}
-.pet-photo-full {
-    display: block; 
-    margin: 0 auto; 
+/* Clinic Service  */
+.wp-image-81 {
     width: 100%; 
     height: auto; 
-    padding: 10px 0; 
 }
-.subheading {
+h6 {
+    font: var(--heading-5-mobile); 
     color: var(--text-color); 
-    font: bold 16px/30px 'Poppins', sans-serif;
-    padding: 5px 30px 0; 
-}
-.intro-text {
-    font: var(--regular-text); 
     padding: 0 30px; 
 }
-ul{
-   list-style-type: circle;
-}
-video {
-    width: 100%; 
-    height: auto; 
-    padding: 10px 0; 
-} */
-
 /* FOOTER */
 footer, footer p{
     background-color: var(--accent-color); 
@@ -368,6 +341,11 @@ p {
     font: var(--para-tablet); 
     padding: 30px 60px; 
 }
+/* Clinic Service  */
+h6 {
+    font: var(--heading-5-tablet); 
+    padding: 0 60px; 
+}
 }
 @media screen and (min-width:1440px) { 
 /* ABOUT Page.php  */
@@ -455,6 +433,11 @@ p {
 a {
     text-transform: uppercase;
     text-align: center; 
+}
+/* Clinic Service  */
+h6 {
+    font: var(--heading-6-desktop); 
+    padding: 0 200px; 
 }
 /* FOOTER */
 .pb-6 {

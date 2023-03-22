@@ -1,4 +1,4 @@
-<div>
+<div class="content">
   <?php
 if (have_posts()) {
     // Load posts loop.

@@ -126,12 +126,6 @@ h1 {
     left: 30px; 
     background-color: transparent;
 }
-.wp-block-column{
-    background-color: var(--accent-color-light);
-}
-.wp-block-column h3, .wp-block-column p, .wp-block-column ul li, .wp-block-image img, .wp-block-columns.wp-container-7 {
-    background-color: transparent;
-}
 .content .wp-element-button {
     position: relative; 
     background-color: var(--heading-color); 
@@ -158,9 +152,9 @@ h3 {
     color: var(--text-color);
     padding: 10px 30px; 
 }
-.wp-block-gallery {
-    display: flex; 
-    flex-flow: row wrap; 
+.wp-block-image {
+    width: 100%; 
+    height: auto; 
     padding: 10px 30px; 
 }
 p {
@@ -169,6 +163,21 @@ p {
 }
 figcaption {
     font: var(--para-mobile); 
+}
+.wp-block-group__inner-container {
+    background-color: var(--accent-color-light);
+}
+.wp-block-group__inner-container img {
+    border-radius: 15px;
+}
+.wp-block-group__inner-container h2, .wp-block-group__inner-container p, .wp-block-columns, .wp-block-column, .wp-block-group__inner-container .wp-block-image, .wp-block-group__inner-container .wp-element-caption, .wp-block-group__inner-container a {
+    background-color: transparent;
+}
+.wp-block-group__inner-container h2, .wp-block-group__inner-container a {
+    color: var(--background-color); 
+}
+.wp-block-group__inner-container .wp-block-columns {
+    margin-bottom: 0; 
 }
 /* Clinic Service  */
 /* .wp-image-81 {
@@ -354,18 +363,21 @@ h3 {
     padding: 10px 60px; 
 }
 .wp-block-gallery {
-    padding: 10px 60px; 
+    padding: 10px 30px; 
 }
 img {
     width: 100%; 
     height: auto; 
 }
-.content img {
-    padding: 10px 60px; 
+.content .wp-element-button {
+    margin: 10px 60px 30px; 
+}
+.wp-block-group__inner-container .wp-block-columns {
+    padding: 0 30px; 
 }
 p {
     font: var(--para-tablet); 
-    padding: 30px 60px; 
+    padding: 10px 60px; 
 }
 /* Custom page  */
 .custom-content h2 {
@@ -374,6 +386,10 @@ p {
 .wp-block-media-text__content p, .wp-block-media-text__content h6{
 padding: 5px 15px; 
 margin: 0 auto; 
+}
+.wp-block-group__inner-container a {
+    font: var(--heading-5-tablet); 
+    margin: 0 auto; 
 }
 .wp-block-media-text {
     padding: 20px 0; 
@@ -407,12 +423,6 @@ cite {
     font-style: normal;
     padding: 0 20px; 
 }
-.wp-image-82 {
-    width: 30%; 
-    height: auto; 
-    margin: 0 auto; 
-    padding: 0 60px; 
-}
 .logo {
     width: 8%; 
     padding: 25px; 
@@ -429,20 +439,19 @@ h1 {
     top: 400px; 
     padding: 0 0 40px; 
 }
-.wp-element-button {
-    left: 120px; 
-    top: 530px; 
+.content .wp-element-button {
+    margin: 0 120px 40px; 
 }
 a {
     font: var(--para-tablet); 
 }
 h2 {
     font: var(--heading-2-tablet); 
-    padding: 60px 200px 0; 
+    padding: 60px 120px 0; 
 }
 h3 {
     font: var(--heading-3-tablet); 
-    padding: 10px 200px; 
+    padding: 10px 120px; 
 }
 img {
     width: 100%; 
@@ -450,22 +459,25 @@ img {
     object-fit: cover; 
 }
 .wp-block-gallery {
-    padding: 30px 200px; 
+    padding: 30px 120px; 
 }
 .content img {
-    padding: 20px 200px; 
+    /* padding: 20px 200px;  */
     text-align: center;
     margin: 0 auto; 
 }
-.wp-image-63 {
-    padding: 30px 200px;
-    object-fit: cover; 
-    width: 100%; 
-    text-align: center; 
+.wp-block-group__inner-container img {
+    border-radius: 15px;
+}
+.wp-block-group__inner-container .wp-block-image {
+    padding: 20px 90px 30px; 
+}
+.wp-block-group__inner-container a {
+    font: var(--heading-5-desktop); 
 }
 p {
     font: var(--para-tablet); 
-    padding: 10px 200px 40px; 
+    padding: 10px 120px 40px; 
 }
 a {
     text-transform: uppercase;

@@ -10,7 +10,6 @@ get_header();?>
       echo 
       "<div>
       <img src='" . get_the_post_thumbnail_url() . "' alt='Hero Image'>
-      <h1>Heading 1 </h1> 
       </div>";
   } ?>
 </div> 

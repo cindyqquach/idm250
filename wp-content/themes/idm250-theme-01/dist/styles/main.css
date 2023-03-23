@@ -20,7 +20,7 @@
     --heading-1-desktop: bold 130px/140px 'Poppins', sans-serif;
     --heading-2-desktop: bold 80px/90px 'Poppins', sans-serif;
     --heading-3-desktop: bold 64px/70px 'Poppins', sans-serif;
-    --heading-4-desktop: bold 40px/50px 'Poppins', sans-serif;
+    --heading-4-desktop: bold 40px/60px 'Poppins', sans-serif;
     --heading-5-desktop: bold 30px/40px 'Poppins', sans-serif;
     --heading-6-desktop: bold 15px/30px 'Poppins', sans-serif;
 }
@@ -42,6 +42,29 @@ h5 {
     color: var(--text-color); 
     padding: 0 30px; 
     text-align: center;
+}
+.wp-block-group__inner-container {
+    padding: 0 0 20px; 
+}
+.wp-block-group__inner-container h5 {
+    text-align: left;
+    padding: 20px 30px 0; 
+    color: var(--background-color); 
+    background-color: transparent;
+}
+.wp-block-group__inner-container h2 {
+    padding: 0 30px; 
+}
+.wp-block-media-text__media img {
+    padding: 30px; 
+    border-radius: 25px;
+}
+.wp-block-media-text__content h5 {
+    text-align: left;
+    padding: 0; 
+}
+.wp-block-media-text__content p {
+    padding: 0 0 20px; 
 }
 li {
     font: var(--para-mobile); 
@@ -68,14 +91,27 @@ h4 {
     padding: 15px 30px; 
 }
 .wp-block-pullquote {
-    font: var(--heading-3-mobile); 
-    color: var(--heading-color);
+    color: var(--text-color);
+    text-align: left;
+    background-color: var(--accent-color-light);
+}
+.wp-block-pullquote p {
     font-style: italic;
-    padding: 10px 0; 
+    font-weight: bold;
+    font: var(--heading-3-mobile);
+    padding: 20px 30px; 
+}
+.wp-block-pullquote blockquote, .wp-block-pullquote p, .wp-block-pullquote cite {
+    background-color: transparent;
 }
 cite {
+    font: var(--para-mobile);
     font-size: 16px;
     font-style: normal;
+    padding: 30px; 
+}
+.wp-block-embed iframe {
+    padding: 0 10px 20px;
 }
 .logo {
     padding: 10px; 
@@ -186,7 +222,7 @@ figcaption {
 } */
 img {
     width: 100%; 
-    height: auto; 
+    height: auto;  
 }
 /* .content img {
     padding: 10px 30px; 
@@ -225,24 +261,23 @@ footer, footer p{
     color: var(--background-color); 
 }
 /* 404 Page*/
-.error {
+.error h2 {
+    font: var(--heading-1-mobile);
+    padding: 0 160px; 
+    margin: 0 auto; 
+    display: block;
+}
+.error p, .error-heading, .error-para {
     text-align: center;
     color: var(--accent-color-light);
-    font: bold 70px/30px 'Poppins', sans-serif;
-    margin: 40px 0 30px; 
-}
-.error-heading, .error-para {
-    text-align: center;
-    font: normal 14px/25px 'Poppins', sans-serif;
     color: var(--text-color);
-    margin: 0 20px; 
 }
 .error-heading {
     font-weight: bold;
 }
 .click-button {
     text-decoration: none;
-    font: normal 14px/25px 'Poppins', sans-serif;
+    font: var(--para-mobile); 
     color: var(--background-color); 
     background-color: var(--heading-color);
     border: none;
@@ -253,7 +288,7 @@ footer, footer p{
 }
 .button {
     display: block;
-    margin: 20px 100px 0; 
+    margin: 20px 120px 0; 
 }
 .click-button a {
     text-decoration: none;
@@ -286,9 +321,25 @@ footer, footer p{
 
 @media screen and (min-width:768px) {
 /* ABOUT Page.php  */
+.content img {
+    padding: 10px 30px; 
+}
+.wp-block-group__inner-container {
+    padding: 20px 0 ; 
+}
+.wp-block-group__inner-container h5 {
+    padding: 20px 60px 0; 
+}
+.wp-block-group__inner-container h2 {
+    padding: 0 60px; 
+}
+.wp-block-media-text__media img {
+    padding: 0 60px; 
+    border-radius: 25px;
+}
 h5 {
     font: var(--heading-5-tablet); 
-    padding: 20px 60px 0; 
+    padding: 10px 60px 0; 
 }
 li {
     font: var(--para-tablet); 
@@ -300,13 +351,33 @@ h4 {
 }
 .wp-block-pullquote {
     font: var(--heading-3-mobile); 
-    color: var(--heading-color);
-    font-style: italic;
-    padding: 10px 0; 
+}
+.wp-block-pullquote p {
+    padding: 20px 60px; 
+}
+.wp-block-pullquote cite {
+    padding: 0 60px; 
 }
 cite {
     font-size: 16px;
     font-style: normal;
+}
+cite {
+    font: var(--para-mobile);
+    font-size: 16px;
+    font-style: normal;
+    padding: 30px; 
+}
+.wp-block-embed iframe {
+    display: block; 
+    width: 800px; 
+    height: 481px; 
+    text-align: center;
+    padding: 0 60px 20px;
+    margin: 0 auto; 
+}
+.wp-block-embed {
+    overflow-wrap:unset;
 }
 /* .content img {
     width: 50%; 
@@ -384,7 +455,7 @@ p {
     padding: 10px 60px; 
 }
 .wp-block-media-text__content p, .wp-block-media-text__content h6{
-padding: 5px 15px; 
+padding: 20px 0; 
 margin: 0 auto; 
 }
 .wp-block-group__inner-container a {
@@ -399,6 +470,14 @@ h6 {
     font: var(--heading-5-tablet); 
     padding: 0 60px; 
 }
+/* ERROR */
+.error h2 {
+    font: var(--heading-1-tablet); 
+    padding: 0 320px; 
+}
+.button {
+    margin: 40px 320px 0; 
+}
 }
 @media screen and (min-width:1440px) { 
 /* ABOUT Page.php  */
@@ -408,7 +487,7 @@ h5 {
 }
 li {
     font: var(--para-desktop); 
-    padding: 10px 200px; 
+    padding: 8px 200px; 
 }
 h4 {
     font: var(--heading-4-desktop); 
@@ -447,7 +526,7 @@ a {
 }
 h2 {
     font: var(--heading-2-tablet); 
-    padding: 60px 120px 0; 
+    padding: 60px 200px 0; 
 }
 h3 {
     font: var(--heading-3-tablet); 
@@ -462,8 +541,8 @@ img {
     padding: 30px 120px; 
 }
 .content img {
-    /* padding: 20px 200px;  */
-    text-align: center;
+    padding: 20px 180px; 
+    border-radius: 25px;
     margin: 0 auto; 
 }
 .wp-block-group__inner-container img {
@@ -475,13 +554,36 @@ img {
 .wp-block-group__inner-container a {
     font: var(--heading-5-desktop); 
 }
+.wp-block-group__inner-container {
+    padding: 20px 0 ; 
+}
+.wp-block-group__inner-container h5 {
+    padding: 20px 200px 0; 
+}
+.wp-block-group__inner-container h2 {
+    padding: 20px 200px; 
+}
+.wp-block-media-text__media img {
+    padding: 20px 200px; 
+    border-radius: 25px;
+}
+.content .wp-element-button {
+    margin: 10px 120px 40px; 
+    padding: 30px 40px; 
+}
 p {
     font: var(--para-tablet); 
-    padding: 10px 120px 40px; 
+    padding: 20px 200px 30px; 
 }
 a {
     text-transform: uppercase;
     text-align: center; 
+}
+.wp-block-pullquote cite {
+    padding: 0 200px; 
+}
+.wp-block-embed iframe {
+    padding: 40px 0px;
 }
 /* Custom page  */
 .custom-content h1 {
@@ -494,12 +596,20 @@ a {
  padding: 20px 200px; 
 }
 .wp-block-media-text__content p, .wp-block-media-text__content h6{
-padding: 5px 15px; 
+padding: 15px 85px 30px 0; 
 }
 /* Clinic Service  */
 h6 {
     font: var(--heading-6-desktop); 
     padding: 0 200px; 
+}
+/* ERROR */
+.error h2 {
+    font: var(--heading-1-desktop); 
+    padding: 0 600px; 
+}
+.button {
+    margin: 0 630px ; 
 }
 /* FOOTER */
 .pb-6 {

@@ -7,10 +7,10 @@
     --para-mobile: normal 15px/30px 'Poppins', sans-serif;
     --heading-1-mobile: bold 40px/50px 'Poppins', sans-serif;
     --heading-2-mobile: bold 30px/40px 'Poppins', sans-serif;
-    --heading-3-mobile: bold 26px/36px 'Poppins', sans-serif;
-    --heading-4-mobile: bold 20px/30px 'Poppins', sans-serif;
-    --heading-5-mobile: bold 14px/24px 'Poppins', sans-serif;
-    --para-tablet: normal 18px/30px 'Poppins', sans-serif;
+    --heading-3-mobile: bold 20px/30px 'Poppins', sans-serif;
+    --heading-4-mobile: bold 18px/30px 'Poppins', sans-serif;
+    --heading-5-mobile: bold 16px/25px 'Poppins', sans-serif;
+    --para-tablet: normal 15px/25px 'Poppins', sans-serif;
     --heading-1-tablet: bold 70px/80px 'Poppins', sans-serif;
     --heading-2-tablet: bold 60px/70px 'Poppins', sans-serif;
     --heading-3-tablet: bold 30px/45px 'Poppins', sans-serif;
@@ -120,13 +120,20 @@ li {
 /* Front-page */
 h1 {
     font: var(--heading-1-mobile); 
-    color: var(--background-color); 
+    color: var(--heading-color); 
     position: absolute; 
     top: 250px; 
     left: 30px; 
     background-color: transparent;
 }
-.wp-element-button {
+.wp-block-column{
+    background-color: var(--accent-color-light);
+}
+.wp-block-column h3, .wp-block-column p, .wp-block-column ul li, .wp-block-image img, .wp-block-columns.wp-container-7 {
+    background-color: transparent;
+}
+.content .wp-element-button {
+    position: relative; 
     background-color: var(--heading-color); 
     padding: 10px 30px; 
     margin: 10px 30px 20px; 
@@ -172,9 +179,9 @@ img {
     width: 100%; 
     height: auto; 
 }
-.content img {
+/* .content img {
     padding: 10px 30px; 
-}
+} */
 h6 {
     font: var(--heading-5-mobile); 
     color: var(--text-color); 

@@ -216,17 +216,10 @@ figcaption {
     margin-bottom: 0; 
 }
 /* Clinic Service  */
-/* .wp-image-81 {
-    width: 100%; 
-    height: auto; 
-} */
 img {
     width: 100%; 
     height: auto;  
 }
-/* .content img {
-    padding: 10px 30px; 
-} */
 h6 {
     font: var(--heading-5-mobile); 
     color: var(--text-color); 
@@ -306,16 +299,30 @@ footer, footer p{
     background-color: var(--accent-color); 
 }
 /* Custom page  */
-.custom-content h1 {
+.content h1 {
     position: relative; 
-    text-align: center; 
-    color: var(--heading-color); 
+    color: var(--background-color);  
     top: 0; 
     left: 0; 
-    padding: 10px 0; 
-}
-.custom-content h2 {
     padding: 0 30px; 
+}
+.content h4 {
+    background-color: #BF91C4;
+    color: var(--accent-color); 
+}
+.content h6 {
+    color: var(--text-color);
+    text-align: center;
+}
+.content .wp-block-group__inner-container .wp-block-image, .content .wp-block-group__inner-container p{
+    background-color: var(--background-color);
+}
+.content .wp-block-group__inner-container {
+    padding: 0px; 
+}
+.content h5 {
+    text-align: left;
+    padding: 10px 30px 0; 
 }
 }
 
@@ -379,12 +386,6 @@ cite {
 .wp-block-embed {
     overflow-wrap:unset;
 }
-/* .content img {
-    width: 50%; 
-    height: auto; 
-    margin: 0 auto; 
-    padding: 0 60px; 
-} */
 .logo {
     width: 10%; 
     padding: 0 20px; 
@@ -441,18 +442,24 @@ img {
     height: auto; 
 }
 .content .wp-element-button {
-    margin: 10px 60px 30px; 
+    margin: 20px 60px 30px; 
 }
 .wp-block-group__inner-container .wp-block-columns {
     padding: 0 30px; 
 }
 p {
     font: var(--para-tablet); 
-    padding: 10px 60px; 
+    padding: 10px 60px 30px; 
 }
 /* Custom page  */
-.custom-content h2 {
-    padding: 10px 60px; 
+.content h1{
+    padding: 0 60px; 
+} 
+.content h5 {
+    padding: 20px 60px 0; 
+}
+.content h4 {
+    padding: 20px 60px 10px; 
 }
 .wp-block-media-text__content p, .wp-block-media-text__content h6{
 padding: 20px 0; 
@@ -518,9 +525,6 @@ h1 {
     top: 400px; 
     padding: 0 0 40px; 
 }
-.content .wp-element-button {
-    margin: 0 120px 40px; 
-}
 a {
     font: var(--para-tablet); 
 }
@@ -568,7 +572,7 @@ img {
     border-radius: 25px;
 }
 .content .wp-element-button {
-    margin: 10px 120px 40px; 
+    margin: 20px 200px 40px; 
     padding: 30px 40px; 
 }
 p {
@@ -585,18 +589,18 @@ a {
 .wp-block-embed iframe {
     padding: 40px 0px;
 }
-/* Custom page  */
-.custom-content h1 {
-    padding: 25px 0; 
-}
-.custom-content h2 {
-    padding: 10px 200px; 
-}
-.custom-content h4 {
- padding: 20px 200px; 
-}
+/* Custom page  */ */
 .wp-block-media-text__content p, .wp-block-media-text__content h6{
 padding: 15px 85px 30px 0; 
+}
+.content h1{
+    padding: 0 200px; 
+} 
+.content h5 {
+    padding: 40px 200px 0; 
+}
+.content h4 {
+    padding: 20px 200px 10px; 
 }
 /* Clinic Service  */
 h6 {

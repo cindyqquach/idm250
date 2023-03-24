@@ -2,7 +2,7 @@
 /* Template Name: Full Width */
 get_header();
 ?>
-  <div class="custom-content">
+  <div>
   <?php echo get_the_title(); ?> 
     <?php if (get_the_post_thumbnail_url()) {
       echo 
@@ -10,7 +10,9 @@ get_header();
       <img src='" . get_the_post_thumbnail_url() . "' alt='Hero Image'>
       </div>";
   } ?>
+  <div class="content"> 
   <?php get_template_part('components/content'); ?>
+  </div>
   </div>
 
 <?php get_footer(); ?>

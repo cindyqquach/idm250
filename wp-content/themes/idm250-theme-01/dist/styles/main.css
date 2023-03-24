@@ -66,6 +66,11 @@ h5 {
 .wp-block-media-text__content p {
     padding: 0 0 20px; 
 }
+.wp-block-button__link {
+    color: var(--background-color); 
+    background-color: var(--heading-color);
+    margin: 10px 30px 30px; 
+}
 li {
     font: var(--para-mobile); 
     color: var(--text-color); 
@@ -205,12 +210,18 @@ figcaption {
 }
 .wp-block-group__inner-container img {
     border-radius: 15px;
+    padding: 0 0 10px; 
+    background-color: transparent;
 }
 .wp-block-group__inner-container h2, .wp-block-group__inner-container p, .wp-block-columns, .wp-block-column, .wp-block-group__inner-container .wp-block-image, .wp-block-group__inner-container .wp-element-caption, .wp-block-group__inner-container a {
     background-color: transparent;
 }
 .wp-block-group__inner-container h2, .wp-block-group__inner-container a {
     color: var(--background-color); 
+}
+
+.wp-block-group__inner-container h2 {
+    padding: 20px 30px 0; 
 }
 .wp-block-group__inner-container .wp-block-columns {
     margin-bottom: 0; 
@@ -421,7 +432,7 @@ h1 {
     padding: 0 30px; 
 }
 .wp-element-button {
-    margin: 20px 30px 0 0; 
+    margin: 10px 60px 30px; 
 }
 a {
     font: var(--para-tablet); 
@@ -534,7 +545,7 @@ h2 {
 }
 h3 {
     font: var(--heading-3-tablet); 
-    padding: 10px 120px; 
+    padding: 10px 200px; 
 }
 img {
     width: 100%; 
@@ -542,7 +553,7 @@ img {
     object-fit: cover; 
 }
 .wp-block-gallery {
-    padding: 30px 120px; 
+    padding: 30px 180px; 
 }
 .content img {
     padding: 20px 180px; 
@@ -571,9 +582,18 @@ img {
     padding: 20px 200px; 
     border-radius: 25px;
 }
-.content .wp-element-button {
+.content .wp-element-button, .wp-element-button {
     margin: 20px 200px 40px; 
     padding: 30px 40px; 
+}
+.wp-block-group__inner-container .wp-block-columns {
+    padding: 0 120px; 
+}
+.wp-block-image img, .content .wp-block-image img {
+    max-width: 1000px; 
+    border-radius: 25px;
+    
+    margin: 0 auto; 
 }
 p {
     font: var(--para-tablet); 
@@ -602,6 +622,7 @@ padding: 15px 85px 30px 0;
 .content h4 {
     padding: 20px 200px 10px; 
 }
+
 /* Clinic Service  */
 h6 {
     font: var(--heading-6-desktop); 

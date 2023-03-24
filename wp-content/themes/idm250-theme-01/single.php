@@ -6,6 +6,7 @@
 get_header();?> 
 <?php echo get_the_title(); 
 ?>
-
+<div class="single-page"> 
 <?php get_template_part('components/content'); ?>
+</div> 
 <?php get_footer(); ?>

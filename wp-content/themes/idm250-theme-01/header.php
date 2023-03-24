@@ -12,8 +12,7 @@
 
 <body <?php body_class(); ?>>
   <?php 
-  wp_body_open();
-  get_template_part('components/header')?> 
+  wp_body_open();?> 
   <header> 
     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" class="logo" alt="Logo">
     <nav class="main-menu"> 
